@@ -27,115 +27,119 @@ public class ToggleButton extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        txtAlimentacion = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        tglTotal = new javax.swing.JToggleButton();
-        lblLuz = new javax.swing.JLabel();
+        tglAgua = new javax.swing.JToggleButton();
+        tglLuz = new javax.swing.JToggleButton();
+        tglRenta = new javax.swing.JToggleButton();
         lblAgua = new javax.swing.JLabel();
+        lblLuz = new javax.swing.JLabel();
         lblRenta = new javax.swing.JLabel();
+        txtTotal = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(600, 700));
+        getContentPane().setLayout(null);
 
-        jLabel1.setText("Consumo del mes");
+        txtAlimentacion.setText("Alimentacion");
+        getContentPane().add(txtAlimentacion);
+        txtAlimentacion.setBounds(60, 60, 90, 16);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(160, 60, 64, 22);
 
-        jTextField1.setText("ALIMENTACIO");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        tglAgua.setText("Agua");
+        getContentPane().add(tglAgua);
+        tglAgua.setBounds(50, 120, 58, 23);
+
+        tglLuz.setText("Luz");
+        tglLuz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                tglLuzActionPerformed(evt);
             }
         });
+        getContentPane().add(tglLuz);
+        tglLuz.setBounds(40, 160, 80, 23);
 
-        jTextField2.setText("LUZ");
-
-        jTextField3.setText("AGUA");
-
-        jTextField4.setText("RENTA");
-
-        jButton1.setText("TOTAL");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        tglRenta.setText("Renta");
+        tglRenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                tglRentaActionPerformed(evt);
             }
         });
+        getContentPane().add(tglRenta);
+        tglRenta.setBounds(50, 200, 60, 20);
 
-        lblLuz.setText("10");
+        lblAgua.setText("30");
+        getContentPane().add(lblAgua);
+        lblAgua.setBounds(190, 120, 50, 16);
 
-        lblAgua.setText("7.50");
+        lblLuz.setText("50");
+        getContentPane().add(lblLuz);
+        lblLuz.setBounds(190, 160, 50, 16);
 
-        lblRenta.setText("120");
+        lblRenta.setText("100");
+        getContentPane().add(lblRenta);
+        lblRenta.setBounds(190, 200, 70, 16);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(jButton1)
-                        .addGap(38, 38, 38)
-                        .addComponent(tglTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(103, 103, 103)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblLuz)
-                            .addComponent(lblAgua)
-                            .addComponent(lblRenta))))
-                .addContainerGap(86, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblLuz))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblAgua))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblRenta))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(jButton1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                        .addComponent(tglTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15))))
-        );
+        txtTotal.setText("TOTAL");
+        txtTotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTotalActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtTotal);
+        txtTotal.setBounds(160, 260, 72, 23);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(130, 300, 140, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void tglLuzActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tglLuzActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_tglLuzActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void tglRentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tglRentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_tglRentaActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
+       double alimentacion,luz,agua,renta;
+        
+        alimentacion = Double.parseDouble(txtAlimentacion.getText());
+        agua = Double.parseDouble(tglAgua.getText());
+        luz = Double.parseDouble(tglLuz.getText());
+        renta = Double.parseDouble(lblRenta.getText());
+        
+        double valorTotal;
+        
+        valorTotal = alimentacion;
+        
+        if (tglAgua.isSelected()) {
+            valorTotal = valorTotal+agua;
+        }
+        
+        if (tglLuz.isSelected()) {
+            valorTotal = valorTotal+luz;
+        }
+        
+        if (tglRenta.isSelected()) {
+            valorTotal = valorTotal+renta;
+        }
+        
+        txtTotal.setText(valorTotal+"");
+    }//GEN-LAST:event_txtTotalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,15 +177,15 @@ public class ToggleButton extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JLabel lblAgua;
     private javax.swing.JLabel lblLuz;
     private javax.swing.JLabel lblRenta;
-    private javax.swing.JToggleButton tglTotal;
+    private javax.swing.JToggleButton tglAgua;
+    private javax.swing.JToggleButton tglLuz;
+    private javax.swing.JToggleButton tglRenta;
+    private javax.swing.JLabel txtAlimentacion;
+    private javax.swing.JButton txtTotal;
     // End of variables declaration//GEN-END:variables
 }
