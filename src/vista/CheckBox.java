@@ -26,21 +26,124 @@ public class CheckBox extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jCBcebolla = new javax.swing.JCheckBox();
+        jCBcilantro = new javax.swing.JCheckBox();
+        jCBpiña = new javax.swing.JCheckBox();
+        jCBqueso = new javax.swing.JCheckBox();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("High Tower Text", 0, 24)); // NOI18N
+        jLabel1.setText("QUE LE PONEMOS A TUS TAQUITOS!!!");
+
+        jCBcebolla.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jCBcebolla.setText("CEBOLLA");
+        jCBcebolla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCBcebollaActionPerformed(evt);
+            }
+        });
+
+        jCBcilantro.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jCBcilantro.setText("CILANTRO");
+
+        jCBpiña.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jCBpiña.setText("PIÑA");
+
+        jCBqueso.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jCBqueso.setText("QUESO");
+
+        jButton1.setText("TOMAR PEDIO");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("SUS TAQUITOS VAN CON.........");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 421, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(43, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(47, 47, 47))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jCBcilantro)
+                            .addComponent(jCBpiña, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCBqueso, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCBcebolla, javax.swing.GroupLayout.Alignment.LEADING)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 342, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1)
+                .addGap(44, 44, 44)
+                .addComponent(jCBcebolla)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jCBcilantro)
+                .addGap(18, 18, 18)
+                .addComponent(jCBpiña)
+                .addGap(18, 18, 18)
+                .addComponent(jCBqueso)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jCBcebollaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCBcebollaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCBcebollaActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       String orden ="";
+       
+        if (jCBcebolla.isSelected()) {
+            orden = orden + "con cebolla\n";
+        }
+        if (jCBcilantro.isSelected()) {
+            orden = orden + "con clantro\n";
+        }
+        if (jCBpiña.isSelected()) {
+            orden = orden + "con piña\n";
+        }
+        if (jCBqueso.isSelected()) {
+            orden = orden + "con queso\n";
+        }
+        jTextArea1.setText(orden);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +181,14 @@ public class CheckBox extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JCheckBox jCBcebolla;
+    private javax.swing.JCheckBox jCBcilantro;
+    private javax.swing.JCheckBox jCBpiña;
+    private javax.swing.JCheckBox jCBqueso;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
