@@ -26,130 +26,21 @@ public class CheckBox extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jlbmensajeprincipal = new javax.swing.JLabel();
-        Jcbxcebolla = new javax.swing.JCheckBox();
-        Jcbxcilantro = new javax.swing.JCheckBox();
-        Jcbxpiña = new javax.swing.JCheckBox();
-        Jcbxqueso = new javax.swing.JCheckBox();
-        Jbtomarorden = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLbmensaje = new javax.swing.JLabel();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jlbmensajeprincipal.setText("QUE LE PONDREMOS A TUS TAQUTOS!!!");
-
-        Jcbxcebolla.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
-        Jcbxcebolla.setText("cebolla");
-        Jcbxcebolla.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JcbxcebollaActionPerformed(evt);
-            }
-        });
-
-        Jcbxcilantro.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
-        Jcbxcilantro.setText("cilantro");
-        Jcbxcilantro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JcbxcilantroActionPerformed(evt);
-            }
-        });
-
-        Jcbxpiña.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
-        Jcbxpiña.setText("piña");
-
-        Jcbxqueso.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
-        Jcbxqueso.setText("queso");
-
-        Jbtomarorden.setText("TOMAR ORDEN");
-        Jbtomarorden.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JbtomarordenActionPerformed(evt);
-            }
-        });
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        jLbmensaje.setText("Tus taquitos van con..........");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(jlbmensajeprincipal))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Jcbxcilantro)
-                            .addComponent(Jcbxpiña)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLbmensaje)
-                            .addComponent(Jcbxqueso)
-                            .addComponent(Jcbxcebolla)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(Jbtomarorden)))
-                .addContainerGap(68, Short.MAX_VALUE))
+            .addGap(0, 421, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jlbmensajeprincipal)
-                .addGap(32, 32, 32)
-                .addComponent(Jcbxcebolla)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Jcbxcilantro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Jcbxpiña)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Jcbxqueso)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(Jbtomarorden)
-                .addGap(18, 18, 18)
-                .addComponent(jLbmensaje)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48))
+            .addGap(0, 342, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void JcbxcebollaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JcbxcebollaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JcbxcebollaActionPerformed
-
-    private void JcbxcilantroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JcbxcilantroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JcbxcilantroActionPerformed
-
-    private void JbtomarordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtomarordenActionPerformed
-      String orden="";
-      if(Jcbxcebolla.isSelected()) {
-          orden=orden +"con cebolla\n";
-          jTextArea1.setText(orden);
-      }
-            if(Jcbxcilantro.isSelected()) {
-          orden=orden +"con cilantro\n";
-          jTextArea1.setText(orden);
-      }
-                  if(Jcbxpiña.isSelected()) {
-          orden=orden +"con piña\n";
-          jTextArea1.setText(orden);
-      }
-                        if(Jcbxqueso.isSelected()) {
-          orden=orden +"con queso\n";
-          jTextArea1.setText(orden);
-      }
-    }//GEN-LAST:event_JbtomarordenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,14 +78,5 @@ public class CheckBox extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Jbtomarorden;
-    private javax.swing.JCheckBox Jcbxcebolla;
-    private javax.swing.JCheckBox Jcbxcilantro;
-    private javax.swing.JCheckBox Jcbxpiña;
-    private javax.swing.JCheckBox Jcbxqueso;
-    private javax.swing.JLabel jLbmensaje;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JLabel jlbmensajeprincipal;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,11 +8,11 @@ package vista;
  *
  * @author ruby
  */
-public class Llenar_JList {
-    public static void main(String[] args) {
-    Jlist i = new JList();
-    i.setVisible() 
-    
-  }
- 
-}
+//public class Llenar_JList {
+//    public static void main(String[] args) {
+//    Jlist i = new JList();
+//    i.setVisible() 
+//    
+//  }
+// 
+//}
